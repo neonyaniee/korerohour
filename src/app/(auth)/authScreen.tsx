@@ -5,7 +5,7 @@ export default function authScreen() {
   return (
     <View>
       <Text>Welcome to AuthScreen</Text>
-      <Link href="/(tabs)/main">click</Link>
+      <Link href="/(tabs)/articles">click</Link>
     </View>
   )
 }

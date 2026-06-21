@@ -1,3 +1,4 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRouter } from "expo-router";
 import LottieView from "lottie-react-native";
 import { Dimensions, View } from "react-native";
@@ -5,10 +6,22 @@ import Onboarding from "react-native-onboarding-swiper";
 import { onboardingData } from "../../data/onboardingData";
 import globalStyles from "./styles/global";
 
+
 export default function onboarding() {
+  
+  const finishOnboarding = async () => {
+    await AsyncStorage.setItem(
+      "ONBOARDED",
+      JSON.stringify(true)
+    );
+  };
+
   const{width}=Dimensions.get('window');
+
   const router=useRouter();
-  const handleDone=()=>{
+
+  const handleDone= async () => {
+    await finishOnboarding();
     router.replace("/authScreen")
   }
   return (
