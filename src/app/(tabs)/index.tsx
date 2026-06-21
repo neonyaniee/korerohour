@@ -1,12 +1,14 @@
-import { Text, View } from "react-native";
-import Header from "../components/header";
-import globalStyles from "../styles/global";
+import { Text, View } from 'react-native'
+import Header from '../../../components/header'
+import globalStyles from '../styles/global'
 
-export default function Index() {
+const Index = () => {
   return (
-    <View style={globalStyles.container}>
+    <View>
       <Text style={globalStyles.title}> KORERO HOUR </Text>
       <Header/>
     </View>
-  );
+  )
 }
+
+export default Index

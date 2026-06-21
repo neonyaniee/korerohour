@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import globalStyles from "../styles/global";
+import globalStyles from "../src/app/styles/global";
 
 export default function Header() {
     const currentDate = new Date().toLocaleDateString
