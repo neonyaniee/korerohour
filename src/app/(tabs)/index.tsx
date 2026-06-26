@@ -3,6 +3,7 @@ import { Redirect } from 'expo-router';
 import { Button } from "expo-router/build/react-navigation";
 import { useEffect, useState } from 'react';
 import { Text, View } from 'react-native';
+import { SafeAreaView } from "react-native-safe-area-context";
 import Header from '../../../components/header';
 import globalStyles from '../styles/global';
 
@@ -31,11 +32,13 @@ const Index = () => {
   }
 
     return ( //returning
+  <SafeAreaView>
     <View>
       <Text style={globalStyles.title}> KORERO HOUR </Text>
       <Header/>
-      <Button onPress={reset}> RESET </Button>
+      <Button onPress={reset}> RESET CACHE </Button>
     </View>
+  </SafeAreaView>
   )
 }
 

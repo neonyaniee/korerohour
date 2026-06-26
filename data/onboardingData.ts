@@ -5,19 +5,19 @@ export const onboardingData: onboardingItems[] = [
     {
         backgroundColor: colors.background,
         title: "introduction",
-        subtitle: "desc desc desc",
+        subtitle: "ill put something here",
         lottie:require("../assets/animations/intro.json")
     },
     {
         backgroundColor: colors.background,
         title: "features and stuff",
-        subtitle: "desc desc desc",
+        subtitle: "doing anythingbut styling the page",
         lottie:require("../assets/animations/intro.json")
     },
     {
         backgroundColor: colors.background,
         title: "ok log in now",
-        subtitle: "desc desc desc",
+        subtitle: "dis dont even work im getting there...",
         lottie:require("../assets/animations/intro.json")
     },
 ]

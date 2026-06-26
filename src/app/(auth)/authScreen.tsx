@@ -4,8 +4,8 @@ import { StyleSheet, Text, View } from 'react-native'
 export default function authScreen() {
   return (
     <View>
-      <Text>Welcome to AuthScreen</Text>
-      <Link href="/(tabs)/articles">click</Link>
+      <Text>OK WAIT ILL PUT LIKE LOG IN AND REGISTER STUFF HERE YKWIM</Text>
+      <Link href="/(tabs)/articles">wOW Log in! Ummm Yeah this is WIP...</Link>
     </View>
   )
 }

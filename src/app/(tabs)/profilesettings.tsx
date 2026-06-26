@@ -1,11 +1,16 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { Text, View } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import Header from '../../../components/header'
+import globalStyles from '../styles/global'
 
 const Settings = () => {
   return (
+  <SafeAreaView>
     <View>
-      <Text>Settings</Text>
+      <Text style={globalStyles.title}> SETTINGS </Text>
+      <Header/>
     </View>
+  </SafeAreaView>
   )
 }
 
