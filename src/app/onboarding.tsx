@@ -25,7 +25,7 @@ export default function onboarding() {
     router.replace("/authScreen")
   }
   return (
-    <View style={globalStyles.container}>
+    <View style={globalStyles.onboardingContainer}>
       <Onboarding 
         onDone={handleDone}
         onSkip={handleDone}

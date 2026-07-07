@@ -4,11 +4,11 @@
     "slug": "korerohour",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "assets/animations/images/icon.png",
     "scheme": "korerohour",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "assets/animations/images/icon.png"
     },
     "android": {
       "adaptiveIcon": {

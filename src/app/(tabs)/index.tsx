@@ -6,6 +6,7 @@ import { Text, View } from 'react-native';
 import { SafeAreaView } from "react-native-safe-area-context";
 import Header from '../../../components/header';
 import globalStyles from '../styles/global';
+import { Link } from "expo-router";
 
 const Index = () => {
 
@@ -37,6 +38,7 @@ const Index = () => {
       <Text style={globalStyles.title}> KORERO HOUR </Text>
       <Header/>
       <Button onPress={reset}> RESET CACHE </Button>
+      <Link href="/(auth)/authScreen">Auth Screen</Link>
     </View>
   </SafeAreaView>
   )
